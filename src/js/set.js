@@ -14,7 +14,6 @@ class Team {
       throw new Error(`Игрок ${member} уже есть в команде`);
     } else {
       this.members.add(member);
-      return new Character(this.members);
     }
   }
 
@@ -22,7 +21,6 @@ class Team {
     args.forEach((arg) => {
       this.members.add(arg);
     });
-    return new Character(this.members);
   }
 
   toArray() {
